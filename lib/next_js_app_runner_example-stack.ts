@@ -16,12 +16,9 @@ export class NextJsAppRunnerExampleStack extends cdk.Stack {
         super(scope, id, props);
 
         this.createAccessRole()
-        // this.buildRepository()
         this.buildAsset()
         this.buildAppRunnerService()
-
     }
-
 
     // https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apprunner-service-authenticationconfiguration.html#cfn-apprunner-service-authenticationconfiguration-accessrolearn
     private createAccessRole() {
